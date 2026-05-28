@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "Urbanist", sans-serif;
+        }
+
+        .success-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .success-image {
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .success-content {
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            color: #05316b;
+            padding: 20px 30px;
+            max-width: 90%;
+            box-sizing: border-box;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .success-content h1 {
+            font-size: 55px;
+            margin: 15px 0;
+        }
+
+        .success-content h2 {
+            font-size: 30px;
+            margin: 15px 0;
+        }
+
+        .success-content p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .success-content a {
+            text-decoration: none;
+            color: #05316b;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .back-icon {
+            width: 28px;
+            height: 28px;
+            background-color: #05316b;
+            color: #ffffff;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            .success-content {
+                left: 26%;
+                text-align: center;
+            }
+
+            .success-content h1 {
+                font-size: 40px;
+            }
+
+            .success-content h2 {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .success-content {
+                top: 45%;
+                width: 90%;
+            }
+
+            .success-content h1 {
+                font-size: 28px;
+            }
+
+            .success-content h2 {
+                font-size: 18px;
+            }
+
+            .success-content p {
+                font-size: 0.95rem;
+            }
+
+            .success-image {
+                object-position: center top;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .success-content {
+                left: 50%;
+            }
+
+            .success-content h1 {
+                font-size: 45px;
+            }
+
+            .success-content h2 {
+                font-size: 20px;
+            }
+
+            .success-content p {
+                font-size: 0.85rem;
+            }
+
+            .back-icon {
+                width: 24px;
+                height: 24px;
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 350px) {
+            .success-content h1 {
+                font-size: 36px;
+            }
+
+            .success-content h2 {
+                font-size: 16px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="success-container">
+        <div class="success-img">
+            <img src="/assets/images/thankyou.webp" alt="Success" class="success-image" />
+        </div>
+        <div class="success-content">
+            <h1>Thankyou for your enquiry!</h1>
+            <h2>We will get back to you shortly</h2>
+            <p>
+                <a href="/">
+                    <i class="fa-solid fa-arrow-left back-icon"></i>
+                    Go to Home
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
